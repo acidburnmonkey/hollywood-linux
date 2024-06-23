@@ -8,7 +8,7 @@ URL:            https://github.com/acidburnmonkey/hollywood-fedora
 Source0:        %{name}-%{version}.tar.gz
 
 BuildArch:      noarch
-Requires:       bash
+Requires:       bash, ccze, ffmpeg
 
 %description
 Fork of hollywood for fedora

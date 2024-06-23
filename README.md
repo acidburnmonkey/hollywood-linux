@@ -1,5 +1,9 @@
-## For Fredora 
-- IF you want to get the make use of the ACII map install jp2a from copr https://copr.fedorainfracloud.org/coprs/trixieua/jp2a/ 
+## Dependencies
+- IF you want to make use of the ACII map install jp2a from copr https://copr.fedorainfracloud.org/coprs/trixieua/jp2a/ 
+```
+ccze ffmpeg
+```
+
 
 ## Usage
 On therminal call
@@ -7,10 +11,6 @@ On therminal call
 hollywood
 ```
 This is the clasic tool that fills the terminal with hackery text 
-```
-wallstreet
-```
-This one generates a barrage of news from rss feeds
 
 ## Manual installation
 ```
