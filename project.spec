@@ -20,14 +20,14 @@ Fork of hollywood for fedora
 
 %install
 # Create the directories in the build root
-mkdir -p %{hollywood}/usr/bin
-mkdir -p %{hollywood}/usr/share
-mkdir -p %{hollywood}/usr/lib
+mkdir -p %{buildroot}/usr/bin
+mkdir -p %{buildroot}/usr/share
+mkdir -p %{buildroot}/usr/lib
 
 # Copy the contents of the respective directories
-cp -a bin/* %{hollywood}/usr/bin/
-cp -a share/* %{hollywood}/usr/share/
-cp -a lib/* %{hollywood}/usr/lib/
+cp -a bin/* %{buildroot}/usr/bin/
+cp -a share/* %{buildroot}/usr/share/
+cp -a lib/* %{buildroot}/usr/lib/
 
 %files
 /usr/bin/*
@@ -35,5 +35,5 @@ cp -a lib/* %{hollywood}/usr/lib/
 /usr/lib/*
 
 %changelog
-* Fri Jun 22 2024  acidburnmonkey  acidburnmonkey@gmail.com - 1.0-1
+* Sat Jun 22 2024  acidburnmonkey  acidburnmonkey@gmail.com - 1.0-1
 - Initial package
