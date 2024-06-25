@@ -1,4 +1,4 @@
-Name:           hollywood-fedora
+Name:           hollywood
 Version:        1.0
 Release:        1%{?dist}
 Summary:        Fork of hollywood for fedora
@@ -14,7 +14,9 @@ Requires:       bash, ccze, ffmpeg
 Fork of hollywood for fedora
 
 %prep
-%setup -q
+# Create a temporary directory to extract the tarball
+mkdir -p %{_builddir}/%{name}-%{version}
+tar -xzvf %{SOURCE0} -C %{_builddir}/%{name}-%{version}
 
 %build
 
@@ -25,9 +27,9 @@ mkdir -p %{buildroot}/usr/share
 mkdir -p %{buildroot}/usr/lib
 
 # Copy the contents of the respective directories
-cp -a bin/* %{buildroot}/usr/bin/
-cp -a share/* %{buildroot}/usr/share/
-cp -a lib/* %{buildroot}/usr/lib/
+cp -a %{_builddir}/%{name}-%{version}/bin/* %{buildroot}/usr/bin/
+cp -a %{_builddir}/%{name}-%{version}/share/* %{buildroot}/usr/share/
+cp -a %{_builddir}/%{name}-%{version}/lib/* %{buildroot}/usr/lib/
 
 %files
 /usr/bin/*
