@@ -10,11 +10,10 @@ On therminal call
 ```
 hollywood
 ```
-This is the clasic tool that fills the terminal with hackery text 
 
-## Manual installation
+## Installation
 ```
-
+pending review 
 ```
 
 ## OG Creator notes
