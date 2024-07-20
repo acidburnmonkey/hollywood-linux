@@ -13,7 +13,15 @@ hollywood
 
 ## Installation
 ```
-pending review 
+git clone --depth 1 https://github.com/acidburnmonkey/hollywood-fedora.git
+cd hollywood-fedora
+sudo cp -r bin lib share /usr/
+```
+## Removal
+```
+sudo rm /bin/hollywood
+sudo rm -r /lib/hollywood
+sudo rm -r /usr/share/hollywood
 ```
 
 ## OG Creator notes
