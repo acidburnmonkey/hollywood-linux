@@ -1,3 +1,6 @@
+Distro agnostic since is all bash scripts anyway no reason to be
+bound to snap.
+
 ## Dependencies
 - IF you want to make use of the ACII map install jp2a from copr https://copr.fedorainfracloud.org/coprs/trixieua/jp2a/ 
 ```
