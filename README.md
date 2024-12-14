@@ -17,7 +17,7 @@ hollywood
 ## Installation
 ```
 git clone --depth 1 https://github.com/acidburnmonkey/hollywood-linux.git
-cd hollywood-fedora
+cd hollywood-linux
 sudo cp -r bin lib share /usr/
 ```
 ## Removal
